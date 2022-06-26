@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Contact section -->
+      <section class="contacts-section">
+          <a href="tel:+380970888888" class="telegram-link">
+              <img src="./icons/telegram-icon.svg" class="telegram-icon" alt="telegram">
+            </a>
+          <a href="tel:+380970888888" class="viber-link">
+                <img src="./icons/viber-icon.svg" class="viber-icon" alt="viber">
+          </a>
+          <a href="tel:+380970888888" class="phone-link-icon">
+                <img src="./icons/phone-icon.svg" class="phone-icon" alt="phone">
+          </a>
+          <a href="tel:+380970888888" class="phone-link-number">
+            +380 970 888 888
+          </a>
+            
+      </section>
+
+      <!-- Experience section -->
+
+      <section class="experience-section">
+        <img src="./img/photo.jpg" alt="my-photo" class="my-photo" />
+        <div>
+          <a href="https://www.facebook.com/profile.php?id=100002359270963"
+            ><img src="./icons/fb-icon.svg" alt="my-facebook-link"  class="icon facebook-icon"
+          /></a>
+          <a href="https://www.linkedin.com/in/viacheslav-haber-331b48210/"><img src="./icons/linkedin-icon.svg"
+            alt="my-linkedin-link"
+              class="icon"
+          /></a>
+        </div>
+        <div class="my-work-experience">
+          <p class="my-work-experience-text my-work-experience-text-works">
+            32 готовых проекта
+          </p>
+          <p class="my-work-experience-text">2 года опыта</p>
+        </div>
+        <div class="technologies-container">
+          <img src="./icons/js-icon.svg" alt="JavaScript" class="js-icon" />
+          <img src="./icons/react-icon.svg" alt="React" class="react-icon" />
+          <img src="./icons/nodejs-icon.svg" alt="NodeJS" class="icon" />
+        </div>
+        <a class="my-project-links" href="https://github.com/jokercs">Мои работы</a>
+      </section>
+
+      <!-- My info section -->
+
+      <section class="my-info-section">
+        <h2 class="me">Привет! Я - Вячеслав Габер</h2>
+        <h1 class="my-profession">Я делаю сайты</h1>
+        <p class="my-location">Живу в Одессе</p>
+        <p class="work-freelance">Работаю удаленно</p>
+
+        <p class="my-description">
+          Я - человек-оркестр. В одиночку заменяю целую веб-студию.
+        </p>
+        <div class="my-skills">
+          <p class="my-skills-title">Умею:</p>
+
+          <ul class="my-skills-list">
+            <li class="my-skills-item">
+              <span class="item">Управлять IT-проектами и командами;</span>
+            </li>
+            <li class="my-skills-item">
+              <span class="item">Senior Front End разработчик;</span>
+            </li>
+            <li class="my-skills-item">
+              <span class="item">Middle Back End разработчик;</span>
+            </li>
+            <li class="my-skills-item">
+              <span class="item"
+                >Могу проконтролировать качество своего или вашего проекта, как
+                QA - специалист.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Project price section -->
+
+      <section class="project-price-section">
+
+
+        <form action="#" class="project-price-form" method="POST" name="Просчёт проекта" data-netlify="true" id="project-price-form">
+          <h4 class="project-price-title">Рассчитай стоимость проекта</h4>
+
+            <div class="project-type-container">
+                <label for="project-type" class="project-price-form-field-title"
+                >Тип сайта</label>
+                <select
+                name="project-type" id="project-type" class="project-price-select">
+                <option selected value="landing-page">Landing page</option>
+                <option value="online-store">Online Store</option>
+                <option value="web-application">Web Application</option>
+                <option value="mobile-application">Mobile Application</option>
+                </select>
+            </div>
+
+            <div class="activity-type-container">
+                <p class="project-price-form-field-title">Типы работ</p>  
+
+                <div class="activity-type-item">
+                    <input type="checkbox" name="Project-Managment" id="project-managment" class="activity-type-checkbox">
+                    <label for="project-managment" class="activity-type-title">Project Managment</label>
+                </div>
+                
+                <div class="activity-type-item">
+                    <input type="checkbox" name="Design" id="design" class="activity-type-checkbox">
+                    <label for="design" class="activity-type-title">Design</label>
+                </div>
+                
+                <div class="activity-type-item">
+                    <input type="checkbox" name="Developer" id="developer" class="activity-type-checkbox">
+                    <label for="developer" class="activity-type-title">Developer</label>
+                </div>
+                
+                <div class="activity-type-item">
+                    <input type="checkbox" name="QA" id="qa" class="activity-type-checkbox">
+                    <label for="qa" class="activity-type-title">QA</label>
+                </div> 
+            </div>
+
+            <div class="project-price-container">
+                <p class="project-price-form-field-title">Стоимость</p>
+                <p class="project-price-sum"> <span class="project-price-sum-currency">$</span> <span id = "total-price">0</span></p>
+
+            </div>
+
+            <input type="hidden" name="Email">
+
+            <div class="project-price-calculate-button-container">
+                <button class="project-price-calculate-button">Отправить запрос</button>
+            </div>
+            
+        </form>
+      </section>
+    </div>
+
+        <!-- Modals section -->
+        
+    <div class="modal-bgd" id="modal-email"> 
+        <div class="modal-container">
+          <button class="modal-close-button" id=>
+            <img src="./icons/close-icon.svg" alt="close icon"> 
+          </button>
+          <img src="./icons/mail-icon.svg" alt="mail-icon" class="modal-icon">
+          <h4 class="modal-title">Я свяжусь с вами на<br>
+              протяжении близжайшего часа</h4>
+              <form action="#" class="modal-container-form" id="modal-email-container">
+                <div class="email-input-container" id="email-input-container">
+                  <label for="user-email" class="user-email-title">Email</label>
+                  <input type="email" name="user-email" id="user-email" class="user-email" placeholder="Укажите email">
+                  <p class="email-error-text">Проверьте email</p>  
+                </div>
+
+                  <button type="submit" class="modal-submit-btn">Отправить</button> 
+              </form>
+        </div>
+    </div>
+
+    <div class="modal-bgd" id="success-modal" >
+      <div class="modal-container modal-container-success">
+        <button class="modal-close-button">
+          <img src="./icons/close-icon.svg" alt="close icon"> 
+        </button>
+        <img src="./icons/success-icon.svg" alt="success-icon" class="modal-success-icon">
+
+        <p class="modal-success-message">
+          Ваше сообщение отправлено, я <br> свяжусь с Вами.
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
